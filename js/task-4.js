@@ -1,6 +1,6 @@
 "use strict";
 
-const allUsers = [
+const allUsersAccounts = [
   {
     name: "Moore Hensley",
     gender: "male",
@@ -43,5 +43,5 @@ const getTotalBalanceByGender = (users, gender) =>
     .filter((user) => user.gender === gender)
     .reduce((totalBalance, balance) => totalBalance + balance.balance, 0);
 
-console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
-console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+console.log(getTotalBalanceByGender(allUsersAccounts, "male")); // 12053
+console.log(getTotalBalanceByGender(allUsersAccounts, "female")); // 8863
